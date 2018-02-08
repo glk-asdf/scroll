@@ -84,13 +84,13 @@
     var detail = e.detail || e.wheelDelta || event.detail || event.wheelDelta;
 
     if(firefox){  
-      if(detail<0){  
+      if(detail>0){  
         $(this).scrollLeft($(this).scrollLeft()+60);  
       }else{  
         $(this).scrollLeft($(this).scrollLeft()-60);  
       }           
     }else{  
-      if(detail>0){  
+      if(detail<0){  
         $(this).scrollLeft($(this).scrollLeft()+60);  
       }else{  
         $(this).scrollLeft($(this).scrollLeft()-60);  
