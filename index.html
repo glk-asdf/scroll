@@ -67,9 +67,8 @@
 
   var firefox = navigator.userAgent.indexOf('Firefox') != -1;   
 
-  function MouseWheel(e){  
     console.log(e);
-    console.log(event);
+  function MouseWheel(e){
     e=e||window.event;  
     if(e.stopPropagation){  
       e.stopPropagation();  
@@ -125,9 +124,7 @@
     }else{
       $("#abc .scrollRight").addClass('hide');
     };
-    console.dir(w);
-    console.log(scrollWidth);
-    console.log(scrollLeft);
+    console.log(w,scrollWidth,scrollLeft);
   });
 </script> 
 </html>  
